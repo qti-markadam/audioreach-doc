@@ -325,7 +325,7 @@ to **agmplay** for audio playback. To use aplay with AudioReach:
 Audio Capture Use Case
 ----------------------
 
-Capturing audio on the Rasbperry PI requires adding the Codec Zero audio board to the system. Follow the instructions to install and configure the Codec Zero audio board at: `Raspbery PI Audio Docs <https://www.raspberrypi.com/documentation/accessories/audio.html>`_
+Capturing audio on the Rasbperry PI requires adding a HATS audio board that supports mic input. Codec Zero is one such board and is chosen for this guide. Follow the instructions to install and configure the Codec Zero audio board at: `Raspbery PI Audio Docs <https://www.raspberrypi.com/documentation/accessories/audio.html>`_
 
 Additionally update /boot/config.txt with the following changes:
 
@@ -337,7 +337,7 @@ Additionally update /boot/config.txt with the following changes:
 
 .. note::
    **The Codec Zero device will need to be added manually to the Linux device tree to be enumerated by default.**
-   A patch file with the required device tree changes can be downloaded here: :download:`codecZeroDTChanges.patch <../static/codecZeroDTChanges.patch>`
+   To have the Codec Zero board enumerated by default apply the patch file with the required device tree changes here: :download:`codecZeroDTChanges.patch <../static/codecZeroDTChanges.patch>`
 
 **Applying the Device Tree Patch**
 
