@@ -14,7 +14,6 @@ index 75ce412a85dd..67d64eba457b 100644
 +	};
 +};
 +
-+//i2s_clk_consumer: &i2s {};
 +
 +&ddc0 {
 +	status = "okay";
@@ -51,14 +50,6 @@ index 75ce412a85dd..67d64eba457b 100644
 +	};
  };
  
-+//sound {
-+//	iqaudio_dac: {
-+//		compatible = "iqaudio,iqaudio-codec";
-+//		i2s-controller = <&i2s>;
-+//		status = "okay";
-+//	};
-+//	status = "okay";
-+//}
 +
 +
 +
